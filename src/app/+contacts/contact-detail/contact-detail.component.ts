@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { MdIconRegistry } from '@angular2-material/icon';
-
 import {
   Contact,
   ContactService,
@@ -11,8 +9,7 @@ import {
 @Component({
   selector: 'app-contact-detail',
   templateUrl: './contact-detail.component.html',
-  styleUrls: ['./contact-detail.component.css'],
-  viewProviders: [MdIconRegistry]
+  styleUrls: ['./contact-detail.component.css']
 })
 export class ContactDetailComponent implements OnInit {
   public isLoading: boolean = true;
